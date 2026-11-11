@@ -502,3 +502,7 @@ a.card:hover .card__media img { transform: scale(1.05); }
   .prices dd { font-size: 24px; }
   .info > div { grid-template-columns: 5.5em 1fr; gap: 10px; }
 }
+
+/* LKS make lip */
+.lip-photo { aspect-ratio: 16 / 9; max-width: 420px; margin-bottom: 18px; }
+.prices dd.tbd { font-family: var(--sans); font-size: 14px; color: var(--ink-soft); letter-spacing: 0.06em; }
