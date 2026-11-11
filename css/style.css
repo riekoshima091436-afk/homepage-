@@ -504,5 +504,9 @@ a.card:hover .card__media img { transform: scale(1.05); }
 }
 
 /* LKS make lip */
+.steps--5 { grid-template-columns: repeat(5, 1fr); gap: clamp(12px, 1.4vw, 20px); }
+.steps--5 li { padding-inline: 18px; }
+@media (max-width: 1100px) { .steps--5 { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 820px) { .steps--5 { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 520px) { .steps--5 { grid-template-columns: 1fr; } }
 .lip-photo { aspect-ratio: 16 / 9; max-width: 420px; margin-bottom: 18px; }
-.prices dd.tbd { font-family: var(--sans); font-size: 14px; color: var(--ink-soft); letter-spacing: 0.06em; }
