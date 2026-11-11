@@ -3,17 +3,17 @@
    ========================================================== */
 
 :root {
-  --bg: #f6f3ee;
-  --bg-soft: #efeae2;
-  --surface: #fffdfa;
-  --ink: #22302c;
-  --ink-soft: #55625d;
-  --line: #ddd6ca;
-  --green: #2f4a41;
-  --green-deep: #1d2f29;
-  --sage: #7f9c8e;
-  --sage-soft: #dfe8e2;
-  --gold: #b08d62;
+  --bg: #f7fbfb;
+  --bg-soft: #e9f4f3;
+  --surface: #ffffff;
+  --ink: #1e3338;
+  --ink-soft: #566a6e;
+  --line: #d3e3e1;
+  --green: #1a7f78;
+  --green-deep: #125e5b;
+  --sage: #58b9ad;
+  --sage-soft: #dbf0ec;
+  --gold: #22887e;
   --line-green: #06c755;
 
   --serif: "Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho", "YuMincho", serif;
@@ -73,7 +73,7 @@ h1, h2, h3, h4 {
 .site-header {
   position: sticky; top: 0; z-index: 50;
   height: var(--header-h);
-  background: rgba(246, 243, 238, 0.9);
+  background: rgba(247, 251, 251, 0.92);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid transparent;
@@ -177,7 +177,7 @@ a:hover > .text-link::after,
 .section-head--center .label::after { content: ""; width: 36px; height: 1px; background: currentColor; }
 .section-head--center .lead { margin-inline: auto; }
 
-.arch { border-radius: 999px 999px 0 0; overflow: hidden; }
+.arch { border-radius: 4px; overflow: hidden; }
 .arch img, .frame img { width: 100%; height: 100%; object-fit: cover; }
 .frame { border-radius: 4px; overflow: hidden; }
 
@@ -201,7 +201,7 @@ a:hover > .text-link::after,
 .hero__visual .arch { aspect-ratio: 4 / 5; }
 .hero__visual::before {
   content: ""; position: absolute; inset: -18px -18px 18px 18px; z-index: -1;
-  border: 1px solid var(--gold); border-radius: 999px 999px 0 0; opacity: 0.55;
+  border: 1px solid var(--sage); border-radius: 4px; opacity: 0.7;
 }
 .hero__caption {
   position: absolute; left: -28px; bottom: 36px;
@@ -215,7 +215,7 @@ a:hover > .text-link::after,
   padding-block: clamp(56px, 9vw, 112px) clamp(48px, 7vw, 88px);
   border-bottom: 1px solid var(--line);
   background:
-    radial-gradient(60% 120% at 100% 0%, rgba(127, 156, 142, 0.18), transparent 70%),
+    radial-gradient(60% 120% at 100% 0%, rgba(88, 185, 173, 0.2), transparent 70%),
     var(--bg);
 }
 .page-hero__en {
@@ -248,7 +248,7 @@ a:hover > .text-link::after,
 
 .card { display: flex; flex-direction: column; text-decoration: none; }
 .card__media { aspect-ratio: 4 / 3; overflow: hidden; border-radius: 4px; background: var(--bg-soft); }
-.card__media--arch { aspect-ratio: 4 / 5; border-radius: 999px 999px 0 0; }
+.card__media--arch { aspect-ratio: 4 / 5; }
 .card__media--square { aspect-ratio: 1; }
 .card__media img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.8s cubic-bezier(0.2, 0.7, 0.2, 1); }
 a.card:hover .card__media img { transform: scale(1.05); }
@@ -380,9 +380,9 @@ a.card:hover .card__media img { transform: scale(1.05); }
 .cta {
   background: var(--green-deep); color: #fff; text-align: center;
   padding-block: clamp(64px, 9vw, 104px);
-  background-image: radial-gradient(70% 140% at 50% 0%, rgba(127, 156, 142, 0.28), transparent 70%);
+  background-image: radial-gradient(70% 140% at 50% 0%, rgba(120, 210, 198, 0.3), transparent 70%);
 }
-.cta .label { justify-content: center; color: #d9c2a0; }
+.cta .label { justify-content: center; color: #b5e8df; }
 .cta .label::after { content: ""; width: 36px; height: 1px; background: currentColor; }
 .cta h2 { font-size: clamp(22px, 3.4vw, 32px); }
 .cta p { margin-top: 18px; color: rgba(255, 255, 255, 0.78); font-size: 15px; }
