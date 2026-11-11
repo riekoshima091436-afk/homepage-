@@ -2,6 +2,17 @@
   var doc = document.documentElement;
   doc.classList.add('js');
 
+  // Always open a page at its top (unless the link targets a section)
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+  var toTop = function () {
+    if (location.hash.length > 1) return;
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    doc.scrollIntoView({ block: 'start', behavior: 'instant' });
+  };
+  toTop();
+  window.addEventListener('load', toTop);
+  window.addEventListener('pageshow', toTop);
+
   // Mobile navigation
   var toggle = document.querySelector('.nav-toggle');
   var nav = document.getElementById('nav');
