@@ -3,17 +3,17 @@
    ========================================================== */
 
 :root {
-  --bg: #f7fbfb;
-  --bg-soft: #e9f4f3;
+  --bg: #f7fafd;
+  --bg-soft: #e8f1f8;
   --surface: #ffffff;
-  --ink: #1e3338;
-  --ink-soft: #566a6e;
-  --line: #d3e3e1;
-  --green: #1a7f78;
-  --green-deep: #125e5b;
-  --sage: #58b9ad;
-  --sage-soft: #dbf0ec;
-  --gold: #22887e;
+  --ink: #1d2f3d;
+  --ink-soft: #566878;
+  --line: #d3e0ea;
+  --green: #2b6f9e;
+  --green-deep: #1d4f73;
+  --sage: #6aa9d0;
+  --sage-soft: #dcebf5;
+  --gold: #2b6f9e;
   --line-green: #06c755;
 
   --serif: "Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho", "YuMincho", serif;
@@ -532,3 +532,10 @@ a.card:hover .card__media img { transform: scale(1.05); }
 }
 .price-more__title { font-family: var(--serif); font-size: 19px; letter-spacing: 0.08em; }
 .price-more__text { color: var(--ink-soft); font-size: 15px; margin-bottom: 8px; }
+
+/* LKS make page: rose accent */
+.page-lks { --gold: #a5565f; --rose-soft: #f7e6e5; }
+.page-lks .page-hero { background: radial-gradient(60% 120% at 100% 0%, color-mix(in srgb, #d79aa0 26%, transparent), transparent 70%), var(--bg); }
+.page-lks .menu-title { border-bottom-color: var(--gold); }
+.page-lks .checks li::before { border-color: var(--gold); }
+.page-lks .steps li::before { color: #d08a92; }
