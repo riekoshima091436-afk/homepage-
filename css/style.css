@@ -522,3 +522,4 @@ a.card:hover .card__media img { transform: scale(1.05); }
 .banner__title { font-family: var(--serif); font-size: clamp(18px, 2.2vw, 22px); letter-spacing: 0.08em; }
 .banner__text { margin-top: 6px; color: var(--ink-soft); font-size: 15px; }
 .card__title small { font-size: 0.62em; letter-spacing: 0.04em; white-space: nowrap; }
+.card__links { display: flex; flex-wrap: wrap; gap: 6px 24px; }
