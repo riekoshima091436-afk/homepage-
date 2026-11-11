@@ -523,3 +523,12 @@ a.card:hover .card__media img { transform: scale(1.05); }
 .banner__text { margin-top: 6px; color: var(--ink-soft); font-size: 15px; }
 .card__title small { font-size: 0.62em; letter-spacing: 0.04em; white-space: nowrap; }
 .card__links { display: flex; flex-wrap: wrap; gap: 6px 24px; }
+
+/* Part prices */
+.prices dt small { display: block; font-size: 12px; line-height: 1.6; color: var(--ink-soft); margin-top: 2px; }
+.price-more {
+  display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 10px;
+  padding: clamp(24px, 4vw, 40px); border: 1px dashed var(--sage); border-radius: 6px;
+}
+.price-more__title { font-family: var(--serif); font-size: 19px; letter-spacing: 0.08em; }
+.price-more__text { color: var(--ink-soft); font-size: 15px; margin-bottom: 8px; }
